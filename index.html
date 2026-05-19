@@ -1,8 +1,101 @@
 <!DOCTYPE html>
-<html>
-<head><title>IDOR Demo</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfileHub - User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 <body>
-    <h1>IDOR Vulnerability Demo</h1>
-    <a href="login.html">Start Demo</a>
+    <div class="container">
+        <div class="form-container">
+            <!-- Professional Header -->
+            <div class="app-header">
+                <div class="company-logo">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h1>ProfileHub</h1>
+                <p>Professional Profile Management Platform</p>
+            </div>
+
+            <!-- Login Button -->
+            <button onclick="window.location.href='login.html'" class="login-button">
+                <div class="btn-content">
+                    <span>Access Your Account</span>
+                    <i class="fas fa-sign-in-alt"></i>
+                </div>
+            </button>
+
+            <!-- Platform Features -->
+            <div class="platform-features">
+                <div class="feature-card">
+                    <i class="fas fa-user-edit"></i>
+                    <h3>Profile Management</h3>
+                    <p>Update your personal information and contact details</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Activity Dashboard</h3>
+                    <p>Track your orders and account activity</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-wallet"></i>
+                    <h3>Payment Center</h3>
+                    <p>Manage payment methods and billing information</p>
+                </div>
+            </div>
+
+            <!-- User Accounts Section -->
+            <div class="accounts-section">
+                <h3>Customer Accounts</h3>
+                <p>Access your personalized dashboard with your registered email</p>
+                
+                <div class="sample-accounts">
+                    <div class="account-card">
+                        <i class="fas fa-user"></i>
+                        <div class="account-details">
+                            <strong>Chris Johnson</strong>
+                            <span>chris123@email.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="account-card">
+                        <i class="fas fa-user"></i>
+                        <div class="account-details">
+                            <strong>Hope Williams</strong>
+                            <span>hops123@email.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="account-card">
+                        <i class="fas fa-user"></i>
+                        <div class="account-details">
+                            <strong>Diana Rodriguez</strong>
+                            <span>diana123@email.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Info -->
+            <div class="company-info">
+                <div class="info-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Enterprise Security</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <span>24/7 Support</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-globe"></i>
+                    <span>Global Access</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
