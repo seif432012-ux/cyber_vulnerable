@@ -3,7 +3,7 @@ const USERS_DATABASE = {
     104: {
         id: 104,
         name: 'Adhamkh',
-        email: 'Adham@email.com',
+        email: 'Adham@gmail.com',
         password: '123456',
         phone: '+1 (555) 123-4567',
         address: '123 Oak Street, Seattle, WA 98101',
@@ -16,7 +16,7 @@ const USERS_DATABASE = {
     105: {
         id: 105,
         name: 'MrAfton',
-        email: 'Afton123@email.com',
+        email: 'Afton123@gmail.com',
         password: '123456',
         phone: '+1 (555) 987-6543',
         address: '456 Pine Avenue, Portland, OR 97201',
@@ -29,7 +29,7 @@ const USERS_DATABASE = {
     106: {
         id: 106,
         name: 'chrissantino',
-        email: 'chris123@email.com',
+        email: 'chris123@gmail.com',
         password: '123456',
         phone: '+1 (555) 246-8024',
         address: '789 Maple Drive, Boston, MA 02108',

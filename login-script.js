@@ -3,7 +3,7 @@ const USERS_DATABASE = {
     104: {
         id: 104,
         name: 'Adhamkh',
-        email: 'Adham@email.com',
+        email: 'Adham@gmail.com',
         password: '123456',
         phone: '+1 (555) 123-4567',
         address: '123 Oak Street, Seattle, WA 98101',
@@ -16,7 +16,7 @@ const USERS_DATABASE = {
     105: {
         id: 105,
         name: 'MrAfton',
-        email: 'Afton123@email.com',
+        email: 'Afton123@gmail.com',
         password: '123456',
         phone: '+1 (555) 987-6543',
         address: '456 Pine Avenue, Portland, OR 97201',
@@ -29,7 +29,7 @@ const USERS_DATABASE = {
     106: {
         id: 106,
         name: 'chrissantino',
-        email: 'chris123@email.com',
+        email: 'chris123@gmail.com',
         password: '123456',
         phone: '+1 (555) 246-8024',
         address: '789 Maple Drive, Boston, MA 02108',
@@ -38,8 +38,52 @@ const USERS_DATABASE = {
             { id: 'ORD-2024-1062', date: '2024-03-18', item: '4K Webcam', amount: '$199.99', status: 'Processing' }
         ],
         card: 'Amex 1233 1007'
+    },
+    107: {
+        id: 107,
+        name: 'Abdelrahman atef',
+        email: 'abdelrahman123@gmail.com',
+        password: '123456',
+        phone: '+1 (555) 478-9012',
+        address: '321 Elm Street, Denver, CO 80202',
+        orders: [
+            { id: 'ORD-2024-1071', date: '2024-02-28', item: 'Smartphone Case', amount: '$29.99', status: 'Delivered' },
+            { id: 'ORD-2024-1072', date: '2024-03-12', item: 'Bluetooth Speaker', amount: '$89.99', status: 'Shipped' },
+            { id: 'ORD-2024-1073', date: '2024-03-20', item: 'Wireless Charger', amount: '$45.00', status: 'Processing' }
+        ],
+        card: 'Visa 4512 7894 3621 9087'
+    },
+    108: {
+        id: 108,
+        name: 'reda ayman',
+        email: 'reda123@gmail.com',
+        password: '123456',
+        phone: '+1 (555) 634-7821',
+        address: '654 Broadway, New York, NY 10012',
+        orders: [
+            { id: 'ORD-2024-1081', date: '2024-01-25', item: 'RTX 4070 Graphics Card', amount: '$599.99', status: 'Delivered' },
+            { id: 'ORD-2024-1082', date: '2024-03-01', item: '32GB RAM Kit', amount: '$189.99', status: 'Delivered' },
+            { id: 'ORD-2024-1083', date: '2024-03-15', item: 'Gaming Monitor 27"', amount: '$329.99', status: 'Shipped' }
+        ],
+        card: 'Mastercard 5234 8765 4321 1098'
+    },
+    109: {
+        id: 109,
+        name: 'Aly_Hassan',
+        email: 'aly123@gmail.com',
+        password: '123456',
+        phone: '+1 (555) 892-3456',
+        address: '987 Design Lane, Austin, TX 73301',
+        orders: [
+            { id: 'ORD-2024-1091', date: '2024-02-05', item: 'Wacom Drawing Tablet', amount: '$249.99', status: 'Delivered' },
+            { id: 'ORD-2024-1092', date: '2024-03-08', item: 'Adobe Creative Suite', amount: '$52.99', status: 'Delivered' },
+            { id: 'ORD-2024-1093', date: '2024-03-22', item: 'Color Calibration Monitor', amount: '$449.99', status: 'Processing' }
+        ],
+        card: 'Visa 4789 3456 1234 5678'
     }
 };
+   
+
 
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function() {
