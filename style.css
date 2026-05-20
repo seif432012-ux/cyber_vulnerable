@@ -460,7 +460,6 @@ button:hover{
     }
 }
 
-/* Smooth animations */
 .feature-card, .account-card, .login-button {
     animation: fadeInUp 0.6s ease-out;
 }

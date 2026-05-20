@@ -1,4 +1,3 @@
-// Same database (for simplicity)
 const USERS_DATABASE = {
     104: {
         id: 104,
@@ -85,13 +84,11 @@ const USERS_DATABASE = {
 
 
 
-// Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function() {
     checkAuthentication();
 });
 
 function checkAuthentication() {
-    // Get logged in user from localStorage
     const loggedInUserId = localStorage.getItem('loggedUserId');
     
     if (!loggedInUserId) {
@@ -100,7 +97,6 @@ function checkAuthentication() {
         return false;
     }
     
-    // Get requested user ID from URL
     const urlParams = new URLSearchParams(window.location.search);
     const requestedUserId = urlParams.get('user_id');
     
@@ -109,7 +105,6 @@ function checkAuthentication() {
         return;
     }
     
-    // Load the profile (VULNERABLE - no authorization check)
     loadUserProfile(requestedUserId);
     
     return true;
@@ -123,7 +118,6 @@ function loadUserProfile(userId) {
         return;
     }
     
-    // Display all user information
     document.getElementById('user-name').textContent = user.name;
     document.getElementById('user-id').textContent = '#' + user.id;
     document.getElementById('user-email').textContent = user.email;
@@ -131,7 +125,6 @@ function loadUserProfile(userId) {
     document.getElementById('user-address').textContent = user.address;
     document.getElementById('card-info').textContent = user.card;
     
-    // Display orders
     const ordersContainer = document.getElementById('orders-container');
     ordersContainer.innerHTML = '';
     

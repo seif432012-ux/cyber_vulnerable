@@ -1,4 +1,3 @@
-// User Database
 const USERS_DATABASE = {
     104: {
         id: 104,
@@ -85,7 +84,6 @@ const USERS_DATABASE = {
    
 
 
-// Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('login-form');
     
@@ -98,7 +96,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const password = document.getElementById('password').value;
         const errorMessage = document.getElementById('error-message');
         
-        // Find user by email
         let foundUser = null;
         for (let userId in USERS_DATABASE) {
             if (USERS_DATABASE[userId].email.toLowerCase() === email && 
@@ -109,15 +106,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         if (foundUser) {
-            // Store logged-in user ID
             localStorage.setItem('loggedUserId', foundUser.id);
             
-            // Clear form
             document.getElementById('email').value = '';
             document.getElementById('password').value = '';
             errorMessage.style.display = 'none';
             
-            // Redirect after short delay
             setTimeout(function() {
                 window.location.href = 'profile.html?user_id=' + foundUser.id;
             }, 200);
